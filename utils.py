@@ -67,6 +67,7 @@ async def is_subscribed(bot, query, channel=AUTH_CHANNEL):
         except Exception as e:
             logger.exception(e)
     return btn
+    
 async def get_poster(query, bulk=False, id=False, file=None):
     if not id:
         # https://t.me/GetTGLink/4183
