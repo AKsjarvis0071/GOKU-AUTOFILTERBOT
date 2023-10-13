@@ -800,7 +800,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(alert, show_alert=True)
         
     if query.data.startswith("file"):
-        elif query.data.startswith("pm_checksub"):
+    elif query.data.startswith("pm_checksub"):
         ident, mc = query.data.split("#")
         btn = await is_subscribed(client, query)
         if btn:
